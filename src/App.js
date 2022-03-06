@@ -6,18 +6,18 @@ export default function App() {
     <div className="App">
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
-      <AppDemo2 />
+      <AppDemo1 />
     </div>
   );
 }
 
-function AppDemo2() {
+function AppDemo1() {
   const [darkMode, setDarkMode] = useState(false);
   const enabledRef = useRef(true);
 
   return (
     <div className={`App ${darkMode && "dark-mode"}`}>
-      <h1>The useState hook</h1>
+      <h1>The useState use effect hook</h1>
       <h2>Click the button to toggle the state</h2>
       <button
         onClick={() => {
